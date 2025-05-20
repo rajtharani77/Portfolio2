@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tsparticles/all": "^3.8.0",
+    "@tsparticles/react": "^3.0.0"
+  }
+}

@@ -1,0 +1,56 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    padding:20px;
+}
+#box{
+
+    height: 300px;
+    width: 300px;
+    background-color: wheat;
+    border-radius: 10px;
+    animation-name:move;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+.mini-circle{
+    transition: all cubic-bezier(0.19,1,0.22,1) 1s;
+}
+/* @keyframes move{
+    from{
+        left:0;
+        rotate: 0;
+        top:0;
+    }
+    to{
+        top:50%;
+        left:75%;
+        rotate:360deg;
+        background-color: blue;
+    }
+} */
+@keyframes move{
+    0%{
+        left:0;
+        rotate: 0;
+        top:0;
+    }
+    50%{
+        top:0%;
+        left:75%;
+        rotate:360deg;
+        background-color: blue;
+    }
+    100%{
+        top:70%;
+        left:75%;
+        background-color: chartreuse;
+        rotate: 360deg;
+    }
+}
